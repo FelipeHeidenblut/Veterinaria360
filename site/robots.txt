@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /redacao
+Disallow: /api/
+Sitemap: https://veterinaria360-caderno-de-campo.fheidenblut.chatgpt.site/sitemap.xml

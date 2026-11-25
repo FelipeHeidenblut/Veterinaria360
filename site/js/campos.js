@@ -1,0 +1,386 @@
+// Campos do formulário editorial. O servidor valida estes mesmos campos.
+window.VetCampos = {
+  fields: {
+    episodio: [
+      {
+        key: "title",
+        label: "Título",
+        required: true,
+      },
+      {
+        key: "slug",
+        label: "Endereço do episódio",
+        required: true,
+      },
+      {
+        key: "date",
+        label: "Data de publicação ou referência",
+        type: "date",
+        required: true,
+      },
+      {
+        key: "guest",
+        label: "Convidado",
+        required: true,
+      },
+      {
+        key: "role",
+        label: "Profissão",
+        required: false,
+      },
+      {
+        key: "num",
+        label: "Número do episódio",
+        required: false,
+      },
+      {
+        key: "summary",
+        label: "Resumo",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "body",
+        label: "Texto completo",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "tags",
+        label: "Temas separados por vírgula",
+        required: false,
+      },
+      {
+        key: "location",
+        label: "Local da gravação",
+        required: false,
+      },
+      {
+        key: "youtube",
+        label: "ID ou link do YouTube",
+        required: true,
+      },
+      {
+        key: "spotify",
+        label: "ID ou link do episódio no Spotify",
+        required: false,
+      },
+      {
+        key: "image",
+        label: "Imagem de capa",
+        type: "image",
+        required: false,
+      },
+      {
+        key: "portrait",
+        label: "Foto autorizada do convidado",
+        type: "image",
+        required: false,
+      },
+      {
+        key: "duration",
+        label: "Duração (min:seg)",
+        required: false,
+      },
+      {
+        key: "seoTitle",
+        label: "Título para buscadores",
+        required: false,
+      },
+      {
+        key: "seoDescription",
+        label: "Descrição para buscadores",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "status",
+        label: "Situação",
+        type: "status",
+        required: false,
+      },
+      {
+        key: "publishAt",
+        label: "Agendar publicação (horário local)",
+        type: "datetime-local",
+        required: false,
+      },
+    ],
+    imprensa: [
+      {
+        key: "title",
+        label: "Título",
+        required: true,
+      },
+      {
+        key: "source",
+        label: "Nome da fonte",
+        required: true,
+      },
+      {
+        key: "date",
+        label: "Data de publicação ou referência",
+        type: "date",
+        required: true,
+      },
+      {
+        key: "format",
+        label: "Formato",
+        required: false,
+      },
+      {
+        key: "summary",
+        label: "Resumo",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "url",
+        label: "Link da fonte",
+        type: "url",
+        required: true,
+      },
+      {
+        key: "image",
+        label: "Imagem de capa",
+        type: "image",
+        required: false,
+      },
+      {
+        key: "status",
+        label: "Situação",
+        type: "status",
+        required: false,
+      },
+      {
+        key: "publishAt",
+        label: "Agendar publicação (horário local)",
+        type: "datetime-local",
+        required: false,
+      },
+    ],
+    pagina: [
+      {
+        key: "title",
+        label: "Título",
+        required: true,
+      },
+      {
+        key: "summary",
+        label: "Resumo",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "body",
+        label: "Texto completo",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "image",
+        label: "Imagem de capa",
+        type: "image",
+        required: false,
+      },
+    ],
+    indicador: [
+      {
+        key: "title",
+        label: "Título",
+        required: true,
+      },
+      {
+        key: "value",
+        label: "Valor exibido",
+        required: true,
+      },
+      {
+        key: "unit",
+        label: "Rótulo curto",
+        required: false,
+      },
+      {
+        key: "summary",
+        label: "Resumo",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "date",
+        label: "Data de publicação ou referência",
+        type: "date",
+        required: true,
+      },
+      {
+        key: "source",
+        label: "Nome da fonte",
+        required: true,
+      },
+      {
+        key: "url",
+        label: "Link da fonte",
+        type: "url",
+        required: true,
+      },
+      {
+        key: "status",
+        label: "Situação",
+        type: "status",
+        required: false,
+      },
+    ],
+    territorio: [
+      {
+        key: "title",
+        label: "Título",
+        required: true,
+      },
+      {
+        key: "scope",
+        label: "Escala do mapa",
+        type: "select",
+        choices: ["Mundo", "Brasil", "São Paulo"],
+        required: true,
+      },
+      {
+        key: "position",
+        label: "Posição no mapa",
+        type: "map",
+        required: false,
+      },
+      {
+        key: "value",
+        label: "Audiência ou alcance",
+        required: false,
+      },
+      {
+        key: "unit",
+        label: "Unidade",
+        required: false,
+      },
+      {
+        key: "summary",
+        label: "Resumo",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "date",
+        label: "Data de publicação ou referência",
+        type: "date",
+        required: true,
+      },
+      {
+        key: "source",
+        label: "Nome da fonte",
+        required: true,
+      },
+      {
+        key: "url",
+        label: "Link da fonte",
+        type: "url",
+        required: true,
+      },
+      {
+        key: "status",
+        label: "Situação",
+        type: "status",
+        required: false,
+      },
+    ],
+    foto: [
+      {
+        key: "title",
+        label: "Título",
+        required: true,
+      },
+      {
+        key: "image",
+        label: "Arquivo ou link da foto",
+        type: "image",
+        required: true,
+      },
+      {
+        key: "alt",
+        label: "Descrição da fotografia",
+        required: true,
+      },
+      {
+        key: "credit",
+        label: "Crédito e autorização",
+        required: false,
+      },
+      {
+        key: "context",
+        label: "Seção",
+        type: "select",
+        required: false,
+        choices: ["Na Estrada", "O podcast", "Na mídia"],
+      },
+      {
+        key: "summary",
+        label: "Resumo",
+        type: "area",
+        required: false,
+      },
+      {
+        key: "status",
+        label: "Situação",
+        type: "status",
+        required: false,
+      },
+    ],
+    ajustes: [
+      {
+        key: "youtube",
+        label: "Canal no YouTube",
+        type: "url",
+        required: false,
+      },
+      {
+        key: "spotify",
+        label: "Programa ou episódio no Spotify",
+        type: "url",
+        required: false,
+      },
+      {
+        key: "instagram",
+        label: "Instagram",
+        type: "url",
+        required: false,
+      },
+      {
+        key: "whatsapp",
+        label: "Link de WhatsApp",
+        type: "url",
+        required: false,
+      },
+      {
+        key: "email",
+        label: "E-mail comercial",
+        type: "email",
+        required: false,
+      },
+      {
+        key: "ga",
+        label: "Identificador do GA4",
+        required: false,
+      },
+      {
+        key: "verification",
+        label: "Código de verificação do Search Console",
+        required: false,
+      },
+    ],
+  },
+  names: {
+    episodio: "Episódios",
+    pagina: "Páginas e projetos",
+    imprensa: "Imprensa",
+    indicador: "Indicadores",
+    territorio: "Territórios",
+    foto: "Fotografias",
+    ajustes: "Canais e medição",
+  },
+};

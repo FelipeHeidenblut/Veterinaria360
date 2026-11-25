@@ -1,0 +1,9 @@
+{
+  "name": "veterinaria360",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Site e redação do podcast Veterinária 360°.",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": { "start": "node servidor/iniciar.js", "exportar": "node servidor/exportar.js" }
+}
