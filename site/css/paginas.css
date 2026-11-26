@@ -33,7 +33,7 @@
 }
 .story-host {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  grid-template-columns: minmax(0, 5fr) minmax(0, 4fr);
   gap: clamp(24px, 5vw, 68px);
   align-items: center;
   padding-block: clamp(28px, 4vw, 48px);
@@ -42,6 +42,9 @@
 .story-host img {
   width: 100%;
   height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 66% center;
   border-radius: 4px;
 }
 .story-host .source-link {
@@ -843,6 +846,14 @@
   overflow-wrap: anywhere;
 }
 @media (max-width: 850px) {
+  .story-host {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .story-host img {
+    max-width: 560px;
+    justify-self: center;
+  }
   .watch-layout {
     grid-template-columns: 1.75fr 1fr;
     gap: 4%;
@@ -861,7 +872,6 @@
   }
 }
 @media (max-width: 650px) {
-  .story-host,
   .editorial-columns,
   .visits,
   .watch-layout,
@@ -913,9 +923,6 @@
     left: var(--gutter);
     right: auto;
     bottom: auto;
-  }
-  .story-host {
-    gap: 20px;
   }
   .timeline {
     grid-template-columns: 1fr;

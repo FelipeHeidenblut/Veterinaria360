@@ -189,7 +189,7 @@ function Inicio(c, origin) {
           { className: "spread-photo" },
           elemento("img", {
             src: series.image || "/imagens/entrevista-na-fazenda.webp",
-            alt: series.image ? "" : "Rodrigo Carmo entrevista um produtor na caçamba de uma caminhonete, junto ao gado.",
+            alt: series.image ? "" : "Dr. Rodrigo Carmo entrevista um produtor na caçamba de uma caminhonete, junto ao gado.",
             loading: "lazy",
             width: "1100",
             height: "611",

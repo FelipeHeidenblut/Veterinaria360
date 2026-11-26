@@ -12,7 +12,7 @@ import { origemOriginal } from "./catalogo.js";
 
 const nome = "Veterinária 360°";
 const descricao =
-  "Entrevistas de Rodrigo Carmo com quem trabalha no campo, na pesquisa e na medicina veterinária. Assista aos episódios e acompanhe o Na Estrada.";
+  "Entrevistas de Dr. Rodrigo Carmo com quem trabalha no campo, na pesquisa e na medicina veterinária. Assista aos episódios e acompanhe o Na Estrada.";
 export function rotas(c) {
   return [
     "/",

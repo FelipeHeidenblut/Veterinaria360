@@ -26,7 +26,7 @@ function Socials({ settings, small = false }) {
             "aria-label": {
               youtube: "Veterinária 360 no YouTube",
               spotify: "Veterinária 360 no Spotify",
-              instagram: "Rodrigo Carmo no Instagram",
+              instagram: "Dr. Rodrigo Carmo no Instagram",
             }[n],
             "data-track": "social_" + n,
           },

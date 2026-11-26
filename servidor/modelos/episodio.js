@@ -79,7 +79,7 @@ function Episodio(c, e, origin, endereco) {
           null,
           [
             ["Convidado", e.guest],
-            ["Apresentação", "Rodrigo Carmo"],
+            ["Apresentação", "Dr. Rodrigo Carmo"],
             ["Publicação", dateLabel(e.date, true)],
             ["Local", e.location],
             ["Duração", e.duration],

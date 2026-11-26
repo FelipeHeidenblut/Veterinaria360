@@ -80,25 +80,17 @@ function Secao(c, secao) {
           elemento(
             "div",
             { className: "prose" },
-            elemento("p", null, "Rodrigo Carmo criou o Veterinária 360° para ouvir quem trabalha com medicina veterinária e levar essas conversas a quem cuida dos animais. Ao microfone, ele recebe veterinários, pesquisadores, professores, produtores rurais e empresários."),
+            elemento("p", null, "Dr. Rodrigo Carmo criou o Veterinária 360° para ouvir quem trabalha com medicina veterinária e levar essas conversas a quem cuida dos animais. Ao microfone, ele recebe veterinários, pesquisadores, professores, produtores rurais e empresários."),
             elemento("p", null, "Os convidados trazem questões do consultório, da pesquisa e da vida no campo. Ao contar como trabalham, dão visibilidade a iniciativas e mostram onde a profissão faz parte do nosso dia a dia."),
           ),
         ),
         elemento(
           "section",
           { className: "story-host" },
-          elemento("img", {
-            src: "/imagens/bastidores-da-gravacao.webp",
-            alt: "Rodrigo Carmo diante da câmera da equipe.",
-            width: "1120",
-            height: "632",
-            loading: "lazy",
-          }),
           elemento(
             "div",
             null,
-            elemento(SectionLabel, { icon: "mic" }, "Quem apresenta"),
-            elemento("h2", { className: "secondary-title" }, "Rodrigo Carmo."),
+            elemento("h2", { className: "secondary-title" }, "Uma ideia, muitas histórias e um olhar para o mundo."),
             elemento("div", { className: "prose" }, elemento(Copy, { text: p.body })),
             elemento(
               "a",
@@ -108,9 +100,16 @@ function Secao(c, secao) {
                 rel: "noopener noreferrer",
                 target: "_blank",
               },
-              "Ouça Rodrigo contar a sua história",
+              "Ouça Dr. Rodrigo Carmo contar a sua história",
             ),
           ),
+          elemento("img", {
+            src: "/imagens/bastidores-da-gravacao.webp",
+            alt: "Dr. Rodrigo Carmo diante da câmera da equipe.",
+            width: "1120",
+            height: "632",
+            loading: "lazy",
+          }),
         ),
         elemento(
           "section",
